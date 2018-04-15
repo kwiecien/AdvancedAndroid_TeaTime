@@ -54,7 +54,7 @@ public class MenuActivityScreenTest {
     public void clickGridViewItem_OpensOrderActivity() {
         onData(anything())
                 .inAdapterView(withId(R.id.tea_grid_view))
-                .atPosition(2)
+                .atPosition(1)
                 .perform(click());
 
         onView(withId(R.id.tea_name_text_view)).check(matches(withText(is(TEA_NAME))));
